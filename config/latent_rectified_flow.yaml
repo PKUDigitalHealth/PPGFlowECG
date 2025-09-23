@@ -1,0 +1,63 @@
+model:
+  target: model.latent_rectified_flow.rectified_flow.RectifiedFlow
+  params:
+    feature_size: 4
+    temporal_size: 40 
+    n_layer_enc: 4
+    d_model: 256
+    n_heads: 4
+    mlp_hidden_times: 4
+    attn_pd: 0.0
+    resid_pd: 0.0
+    use_text: False
+    train_num_points: 4
+
+solver:
+  base_lr: 1.0e-4
+  max_steps: 10000
+  results_folder: results/rectified_flow/mcmed
+  gradient_accumulate_every: 1
+  save_cycle: 1000  # max_steps // 10
+  clip_grad_norm: 1.0
+  log_frequency: 100
+  ema:
+    decay: 0.995
+    update_interval: 10
+    
+  optimizer:
+    betas: [0.9, 0.96]
+
+  vae:
+    checkpoint: ""
+  
+  scheduler:
+    target: engine.lr_sch.ReduceLROnPlateauWithWarmup
+    params:
+      factor: 0.5
+      patience: 1000
+      min_lr: 1.0e-9
+      threshold: 1.0e-2
+      threshold_mode: rel
+      warmup_lr: 8.0e-4
+      warmup: 1000 
+      verbose: False
+  use_text: False
+
+# Optional data and sampling configuration used by main.py
+data:
+  train:
+    dir: ""
+    batch_size: 4
+    num_workers: 32
+    pin_memory: true
+  test:
+    saved_dir: ""
+    batch_size: 4
+    num_workers: 32
+    pin_memory: true
+
+
+
+sample:
+  sampling_steps: 10
+  subset_save_threshold: 100000
