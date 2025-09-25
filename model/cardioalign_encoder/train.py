@@ -16,7 +16,7 @@ from model.cardioalign_encoder.cardioalign_model import VAE_Decoder, VAE_Encoder
 from utils.io_utils import load_yaml_config, seed_everything
 from utils.ppgecg_dataset import ECGPPGLMDBDataset
 from torch.utils.data import Dataset, DataLoader
-from utils.data import ECGDataset
+# from utils.data import ECGDataset
 
 def parse_args():
     parser = argparse.ArgumentParser()
