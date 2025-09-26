@@ -20,7 +20,7 @@ python main.py --train --config_file config/latent_rectified_flow.yaml --output 
 
 ### Evaluation:
 During the evaluation process, for calculating the FID score, we used ECGFounder as the feature extractor; the weights for ECGFounder can be downloaded from the following link:
-···sh
+```sh
 https://huggingface.co/PKUDigitalHealth/ECGFounder/tree/main
 ```
 
