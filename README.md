@@ -6,7 +6,12 @@ In clinical practice, electrocardiography (ECG) remains the gold standard for ca
 <img src="./img/framework.png" width="800">
 
 ## ⚙️ PPGFlowECG Training
-1. Build environment from environment.yml
+1. Build environment from requirements.txt
+2. Modify the "train_dir" setting in config/cardioalign_encoder.yaml to point to your training dataset.
+3. Load the model weights, or train the appropriate weights using your own dataset.
+   ```sh
+   https://pan.baidu.com/s/1XGbouLx1tS5t63YbRfpl6A?pwd=hu68
+   ```
 ### Stage 1: CardioAlign-Encoder:
 ```sh
 python model/cardioalign_encoder/train.py --config config/cardioalign_encoder.yaml --save_dir results/cardioalign_encoder
