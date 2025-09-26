@@ -18,6 +18,12 @@ python model/cardioalign_encoder/train.py --config config/cardioalign_encoder.ya
 python main.py --train --config_file config/latent_rectified_flow.yaml --output baseline
 ```
 
+### Evaluation:
+During the evaluation process, for calculating the FID score, we used ECGFounder as the feature extractor; the weights for ECGFounder can be downloaded from the following link:
+···sh
+https://huggingface.co/PKUDigitalHealth/ECGFounder/tree/main
+```
+
 ## 🚀 Quick Generation
 You can use our pre-trained model weights for fast PPG to ECG.
 
