@@ -31,6 +31,9 @@ You can use our pre-trained model weights for fast PPG to ECG.
 ```sh
 https://pan.baidu.com/s/1XGbouLx1tS5t63YbRfpl6A?pwd=hu68
 ```
+```sh
+https://huggingface.co/XiaochengFang/PPGFlowECG/tree/main
+```
 
 ### Generation:
 ```sh
