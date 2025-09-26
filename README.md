@@ -6,6 +6,7 @@ In clinical practice, electrocardiography (ECG) remains the gold standard for ca
 <img src="./img/framework.png" width="800">
 
 ## ⚙️ PPGFlowECG Training
+1. Build environment from environment.yml
 ### Stage 1: CardioAlign-Encoder:
 ```sh
 python model/cardioalign_encoder/train.py --config config/cardioalign_encoder.yaml --save_dir results/cardioalign_encoder
