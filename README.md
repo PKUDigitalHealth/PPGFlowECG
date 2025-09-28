@@ -43,13 +43,10 @@ python main.py --config_file config/latent_rectified_flow.yaml --output baseline
 ## 📝 Citation:
 If you find our work interesting and helpful, please consider giving our repo a star. Additionally, if you would like to cite our work, please use the following format:
 ```sh
-@misc{fang2025ppgflowecglatentrectifiedflow,
-      title={PPGFlowECG: Latent Rectified Flow with Cross-Modal Encoding for PPG-Guided ECG Generation and Cardiovascular Disease Detection}, 
-      author={Xiaocheng Fang and Jiarui Jin and Haoyu Wang and Che Liu and Jieyi Cai and Guangkun Nie and Jun Li and Hongyan Li and Shenda Hong},
-      year={2025},
-      eprint={2509.19774},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2509.19774}, 
+@article{fang2025ppgflowecg,
+  title={PPGFlowECG: Latent Rectified Flow with Cross-Modal Encoding for PPG-Guided ECG Generation and Cardiovascular Disease Detection},
+  author={Fang, Xiaocheng and Jin, Jiarui and Wang, Haoyu and Liu, Che and Cai, Jieyi and Nie, Guangkun and Li, Jun and Li, Hongyan and Hong, Shenda},
+  journal={arXiv preprint arXiv:2509.19774},
+  year={2025}
 }
 ```
